@@ -1,0 +1,39 @@
+/* styles/md-editor-overrides.css */
+/* Dark theme overrides */
+[data-color-mode="dark"] .w-md-editor {
+    --md-editor-background: hsl(var(--background)) !important;
+    --md-editor-text: hsl(var(--foreground)) !important;
+    --md-editor-border: hsl(var(--border)) !important;
+    background-color: var(--md-editor-background) !important;
+    border-color: var(--md-editor-border) !important;
+    color: var(--md-editor-text) !important;
+  }
+  
+  [data-color-mode="dark"] .w-md-editor-text-pre,
+  [data-color-mode="dark"] .w-md-editor-text-input,
+  [data-color-mode="dark"] .w-md-editor-content {
+    color: var(--md-editor-text) !important;
+    background-color: var(--md-editor-background) !important;
+  }
+  
+  [data-color-mode="dark"] .w-md-editor-toolbar {
+    background-color: hsl(var(--muted)) !important;
+    border-color: var(--md-editor-border) !important;
+  }
+  
+  [data-color-mode="dark"] .w-md-editor-toolbar li button {
+    color: var(--md-editor-text) !important;
+  }
+  
+  [data-color-mode="dark"] .w-md-editor-toolbar li.active button {
+    background-color: hsl(var(--accent)) !important;
+  }
+  
+  [data-color-mode="dark"] .w-md-editor-preview {
+    background-color: var(--md-editor-background) !important;
+  }
+  
+  [data-color-mode="dark"] .token.operator,
+  [data-color-mode="dark"] .token.keyword {
+    color: hsl(var(--primary)) !important;
+  }
